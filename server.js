@@ -29,16 +29,18 @@ app.post('/csv', function (req, res) {
         }
      }
     // console.log(storeGeneralKeys)
+    var x = storeGeneralKeys.toString();
+    var y = jsonData.toString();
 
     //creating a text file to store the generalkeys in the firstline
-    fs.writeFile('/samples/test', storeGeneralKeys, (err,fileData)=>{
+    fs.writeFile('/samples/test', x, (err,fileData)=>{
         if (err) {
             console.log(err);
         } 
     });
-    
+
     // store the data in the nextlines
-    fs.writeFile('/samples/test', jsonData, (err, fileData) => {
+    fs.writeFile('/samples/test', y, (err, fileData) => {
         if (err) {
             console.log(err);
         }
