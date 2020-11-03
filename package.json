@@ -1,0 +1,25 @@
+{
+  "name": "challenge_2",
+  "version": "1.0.0",
+  "description": "CSV report generator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamA113/challenge_2.git"
+  },
+  "author": "adamA113",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamA113/challenge_2/issues"
+  },
+  "homepage": "https://github.com/adamA113/challenge_2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "underscore": "^1.11.0"
+  }
+}
