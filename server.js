@@ -1,17 +1,20 @@
 var express = require('express');
 var app = express();
 
-// app.use(express.static('client');
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-var ip = '127.0.0.1';
-var port = 3000;
-
+app.use(express.static('client'));
 
 app.post('/csv', function (req, res) {
-    
-    res.send();
+    console.log(req.body)
+    res.end();
 });
 
 app.get('/', function (req, res) {
-    res.send();
+    res.end();
 });
+
+app.listen(3000, () => {
+    console.log('server is listening ')
+})
